@@ -2,3 +2,10 @@ Angular requires at least one component and one module.
 Components are for functionality and structure and modules are for packaging and distribution.
 The App module is the packaging that helps tell Angular what's available to render. It describes the various dependencies that
 are needed to render the module.
+
+Services are objects that abstract some common logic that you plan to reuse in multiple places.
+They can do about anything you need them to do, beacause they're objects.
+Another way to think of services is as sharable objects that any parts of your app can import as needed.
+They are able to abstract some logic or data(such as the logic necessary to load data from a source), so it's easy to use inside of any component.
+Although services will often help manage data, they are not restricted to any particular job.
+The intention of a service is to enable reuse of code.
