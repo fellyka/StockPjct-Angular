@@ -1,2 +1,4 @@
 Angular requires at least one component and one module. 
 Components are for functionality and structure and modules are for packaging and distribution.
+The App module is the packaging that helps tell Angular what's available to render. It describes the various dependencies that
+are needed to render the module.
