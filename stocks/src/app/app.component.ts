@@ -1,4 +1,5 @@
 import { Component } from '@angular/core'; //Import the component annotation
+import { StocksService, StockInterface } from './services/stocks.service';
 
 //Define the component and its properties
 @Component({
@@ -10,5 +11,11 @@ import { Component } from '@angular/core'; //Import the component annotation
 
 //Create the component controller, with a single property
 export class AppComponent {
-  title = 'app works';
+  stocks: Array<StockInterface> = [];
+  
+  constructor(service: StocksService){
+    service.load(['AAPL'])?.subscribe(stocks => {
+      this.stocks = stocks;
+    })
+  }
 }
