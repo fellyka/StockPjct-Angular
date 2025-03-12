@@ -1,0 +1,1 @@
+/*Imports some common polyfills required to run Angular properly on some browsers*/
