@@ -11,11 +11,11 @@ import { StocksService, StockInterface } from './services/stocks.service';
 
 //Create the component controller, with a single property
 export class AppComponent {
-  stocks: Array<StockInterface> = [];
+  // stocks: Array<StockInterface> = [];
   
-  constructor(service: StocksService){
-    service.load(['AAPL'])?.subscribe(stocks => {
-      this.stocks = stocks;
-    })
-  }
+  // constructor(service: StocksService){
+  //   service.load(['AAPL'])?.subscribe(stocks => {
+  //     this.stocks = stocks;
+  //   })
+  // }
 }

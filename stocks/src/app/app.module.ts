@@ -6,12 +6,13 @@ import { StocksService } from './services/stocks.service';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
-import { SummaryComponent } from './components/summary/summary.component'; //Imports the App component
+import { SummaryComponent } from './components/summary/summary.component';
+import { DashbordComponent } from './components/dashbord/dashbord.component'; 
 
 //Uses the NgModule annotation to define a module by passing an object
 @NgModule({
   //Declarations are to list any components and directives in the app
-  declarations: [AppComponent, SummaryComponent],
+  declarations: [AppComponent, SummaryComponent, DashbordComponent],
 
   //Imports other modules that are used in the app
   imports: [BrowserModule, AppRoutingModule, HttpClientModule],
