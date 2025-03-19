@@ -11,13 +11,15 @@ import { SummaryComponent } from './components/summary/summary.component';
 import { DashbordComponent } from './components/dashbord/dashbord.component';
 import { ManageComponent } from './components/manage/manage.component'; 
 
+import { AppRoutes } from './routes';
+
 //Uses the NgModule annotation to define a module by passing an object
 @NgModule({
   //Declarations are to list any components and directives in the app
   declarations: [AppComponent, SummaryComponent, DashbordComponent, ManageComponent],
 
   //Imports other modules that are used in the app
-  imports: [BrowserModule, AppRoutingModule, HttpClientModule, FormsModule],
+  imports: [BrowserModule, AppRoutingModule, HttpClientModule, FormsModule, AppRoutes],
 
   //Services will be listed here
   providers: [StocksService],

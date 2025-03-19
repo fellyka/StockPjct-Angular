@@ -1,0 +1,35 @@
+/* Style for the navigation bar */
+.mdl-navigation {
+  display: flex;
+  justify-content: flex-start;  /* Align items to the left */
+  gap: 20px;  /* Adds spacing between the links */
+  padding: 10px 20px;  /* Add some padding around the nav */
+}
+
+/* Style the navigation links */
+.mdl-navigation__link {
+  font-size: 16px;  /* Adjust font size */
+  color: #333;  /* Default text color */
+  text-decoration: none;  /* Remove underline */
+  font-weight: 500;  /* Set a medium font weight */
+  padding: 10px 15px;  /* Add padding around each link */
+  border-radius: 4px;  /* Rounded corners for the links */
+  transition: background-color 0.3s ease, color 0.3s ease;  /* Smooth transition for hover effect */
+}
+
+/* Hover effect for the links */
+.mdl-navigation__link:hover {
+  background-color: #00796b;  /* Change background on hover */
+  color: white;  /* Change text color on hover */
+}
+
+/* Active link style */
+.mdl-navigation__link.router-link-active {
+  color: #00796b;  /* Active link color */
+  font-weight: bold;  /* Make active link bold */
+}
+
+/* Add some spacing between the navigation bar and other content */
+.mdl-layout__header-row {
+  padding-bottom: 15px;
+}

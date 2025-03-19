@@ -13,7 +13,13 @@
              <app-summary [stock]="stocks[0]"></app-summary>
       </main> -->
       <main class="mdl-layout__content" style="padding: 20px;">
+         <nav class="mdl-navigation mdl-layout--large-screen-only">
+        <a class="mdl-navigation__link" [routerLink]="['/']">Dashboard</a>
+        <a class="mdl-navigation__link" [routerLink]="['/manage']">Manage</a>
+      </nav>
           <!-- <dashboard></dashboard> -->
-          <manage></manage>
+          <!-- <manage></manage> -->
+          <router-outlet></router-outlet>
      </main>
+     
 </div>
